@@ -1,13 +1,8 @@
-<script>
-
-Alert("poop");
 
 let computerPlay=()=>{
     let choices = ['Rock', 'Paper', 'Scissors'];
     let computerSelection = [Math.floor(Math.random() * choices.length)];
-    return computerSelection;
-
-
+    return console.log(computerSelection);
 };
 
-</script>
+computerPlay();
