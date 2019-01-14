@@ -5,11 +5,13 @@ let computerPlay=()=>{
     
 };
 
-let playerSelection = "rock";
+let playerSelection = "Rock";
 const computerSelection = computerPlay();
 
 let playRound=(playerSelection, computerSelection)=>{
-    // let caseSensitivity = playerSelection.toUpperCase(); issue with code come back to it possibly scope
+    
+    playerSelection = playerSelection.toLowerCase(); //issue with code come back to it possibly scope
+    
     if(playerSelection === computerSelection){
         return "It's a tie!";
     } 
